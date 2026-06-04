@@ -8,7 +8,7 @@ RSS Feeds
 Data Ingestion (feedparser)  
 ↓  
 Processing Layer  
-- Classification (rule-based NLP)  
+- Classification (rule-based )  
 - Summarization (text processing)  
 ↓  
 Ranking System (scoring logic)  
