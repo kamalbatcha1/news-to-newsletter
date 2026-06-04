@@ -1,7 +1,7 @@
 # news-to-newsletter
 AI-powered newsletter pipeline that ingests news from RSS feeds, processes and classifies articles, ranks relevance, and generates automated structured newsletters using a modular Python-based systems
 
-## 🏗️ Architecture
+##  Architecture
 
 RSS Feeds  
 ↓  
@@ -19,7 +19,7 @@ Output File (newsletter.txt)
 
 ---
 
-## ⚙️ Features
+##  Features
 
 -  RSS feed ingestion from multiple sources  
 -  Article classification (Technology, Business, General)  
@@ -31,8 +31,8 @@ Output File (newsletter.txt)
 
 ---
 
-## 📁 Project Structure
-project/
+## Project Structure
+news-to-newsletter/
 │
 ├── config.py # RSS feed configuration
 ├── ingest.py # Fetch data from RSS feeds
@@ -46,17 +46,16 @@ project/
 ## 🛠️ Installation
 
 ### 1. Clone the repository
-```bash
 git clone https://github.com/your-username/news-to-newsletter.git
 cd newsletter-pipeline
+
+
+
 ### 2. Install dependencies
-```bash
 pip install feedparser
 
-##Usage
 
 ### Run the pipeline:
-```bash
 python main.py
 
 ## Future Improvements
