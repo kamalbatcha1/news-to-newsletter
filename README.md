@@ -45,13 +45,13 @@ pip install feedparser
 
 ### Run the pipeline:
 python main.py
----
+
 ## Future Improvements
 
 -Replace rule-based logic with LLMs (GPT/Claude) ​
 -Use embeddings for deduplication ​
 -Improve ranking using semantic similarity ​
 -Add personalization layer​
----
+
 ## Author
 Kamal Batcha
