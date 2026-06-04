@@ -37,7 +37,7 @@ Output File (newsletter.txt)
 git clone https://github.com/your-username/news-to-newsletter.git
 cd news-to-newsletter
 
-
+---
 
 ### 2. Install dependencies
 pip install feedparser
@@ -45,12 +45,13 @@ pip install feedparser
 
 ### Run the pipeline:
 python main.py
-
+---
 ## Future Improvements
+
 -Replace rule-based logic with LLMs (GPT/Claude) ​
 -Use embeddings for deduplication ​
 -Improve ranking using semantic similarity ​
 -Add personalization layer​
-
+---
 ## Author
 Kamal Batcha
