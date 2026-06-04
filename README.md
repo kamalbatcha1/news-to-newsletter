@@ -47,5 +47,23 @@ project/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/newsletter-pipeline.git
+git clone https://github.com/your-username/news-to-newsletter.git
 cd newsletter-pipeline
+### 2. Install dependencies
+```bash
+pip install feedparser
+
+##Usage
+
+### Run the pipeline:
+```bash
+python main.py
+
+## Future Improvements
+Replace rule-based logic with LLMs (GPT/Claude) ​
+Use embeddings for deduplication ​
+Improve ranking using semantic similarity ​
+Add personalization layer​
+
+## Author
+Kamal Batcha
