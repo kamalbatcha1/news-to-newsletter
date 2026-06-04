@@ -31,23 +31,11 @@ Output File (newsletter.txt)
 
 ---
 
-## Project Structure
-news-to-newsletter/
-│
-├── config.py # RSS feed configuration
-├── ingest.py # Fetch data from RSS feeds
-├── processor.py # Classification & summarization
-├── ranking.py # Scoring system
-├── pipeline.py # End-to-end pipeline
-├── newsletter.py # Output generator
-├── main.py # Entry point
-└── newsletter.txt # Generated output file
-
 ## 🛠️ Installation
 
 ### 1. Clone the repository
 git clone https://github.com/your-username/news-to-newsletter.git
-cd newsletter-pipeline
+cd news-to-newsletter
 
 
 
