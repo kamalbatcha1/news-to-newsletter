@@ -1,6 +1,6 @@
 def generate_newsletter(articles):
 
-    print("\n --- NEWSLETTER FROM SSG EVENTS --- \n")
+    print("\n --- NEWSLETTER --- \n")
 
     with open("newsletter.txt", "w", encoding="utf-8") as f:
 
