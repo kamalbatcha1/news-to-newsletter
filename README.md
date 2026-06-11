@@ -1,4 +1,4 @@
-# 📰 Automated News Intelligence Pipeline (Python)
+# 📰 Automated News Intelligence Pipeline
 
 An end-to-end Python-based news aggregation and processing pipeline that fetches real-time news from RSS feeds, classifies articles, ranks them based on relevance, and generates a structured newsletter output.
 
@@ -6,9 +6,17 @@ An end-to-end Python-based news aggregation and processing pipeline that fetches
 
 ## 🚀 Project Overview
 
-This project demonstrates a complete data pipeline that simulates a real-world content intelligence system used in news aggregators.
+This project simulates a real-world **news intelligence system** inspired by platforms like **Google News** and **Flipboard**.
 
-It ingests live RSS feeds, processes article data, applies rule-based classification, assigns relevance scores, and generates a clean, readable newsletter.
+It builds an end-to-end data pipeline that:
+
+- Ingests live RSS feeds
+- Processes and classifies articles
+- Applies relevance scoring
+- Generates structured newsletters
+- Displays insights via Streamlit dashboard
+
+📌 Focus: Data Engineering + NLP + Ranking Systems + Visualization
 
 ---
 
@@ -61,13 +69,19 @@ Final Output (Console + TXT file)
 
 ## ⚙️ How It Works
 
+
 1. RSS feeds are fetched using `feedparser`
-2. Each article is extracted (title + link)
-3. Articles are classified based on source/category rules
-4. A short summary is generated from the title
-5. A relevance score is calculated using keywords + category
+2. Articles are extracted (title + link)
+3. Articles are classified by category
+4. Headlines are summarized (extractive method)
+5. Relevance score is calculated using:
+   - Category weight
+   - Keyword matching
 6. Articles are sorted by score
-7. A structured newsletter is generated
+7. Output generated in:
+   - CLI newsletter
+   - Text file
+   - Streamlit dashboard
 
 ---
 
@@ -115,14 +129,21 @@ streamlit run app.py
 
 ## 🔮 Future Improvements
 
-* Replace rule-based classification with ML models (TF-IDF / BERT)
-* AI-powered summarization using LLMs
-* Store articles in a database (SQLite/PostgreSQL)
-* Email automation for newsletter delivery
-* Web dashboard using Streamlit
-* Cloud deployment (AWS Lambda / EC2)
+*Replace rule-based classification with transformer models (BERT / LLMs)
+*Add semantic similarity using embeddings (Sentence-BERT)
+*Improve ranking using learning-to-rank models
+*Add personalization based on user behavior
+*Deploy using Streamlit Cloud / AWS
+*Automate newsletter delivery via email scheduling
 
 ---
+## 🚀 Key Highlights
+
+-End-to-end data pipeline system
+-Modular production-style architecture
+-Ranking system simulating real-world news relevance scoring
+-Interactive Streamlit dashboard
+-Clear ML/AI upgrade path
 
 ## ⚠️ Disclaimer
 
