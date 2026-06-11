@@ -44,13 +44,15 @@ Output File (newsletter.txt)
 
 ```
 .
+.
 ├── config.py         # RSS feed configuration
-├── ingest.py         # Data ingestion from RSS feeds
+├── ingest.py         # RSS data ingestion layer
 ├── processor.py      # Classification & summarization logic
-├── ranking.py        # Scoring system
-├── pipeline.py       # End-to-end orchestration
-├── newsletter.py     # Output generator (console + file)
-├── main.py           # Entry point
+├── ranking.py        # Article scoring system
+├── pipeline.py       # End-to-end pipeline orchestration
+├── newsletter.py     # Newsletter generator (console + file)
+├── main.py           # CLI entry point
+├── app.py            # Streamlit dashboard UI
 └── newsletter.txt    # Generated output file
 ```
 
@@ -77,16 +79,12 @@ git clone https://github.com/your-username/news-to-newsletter.git
 cd news-to-newsletter
 ```
 
-### 2. Install dependencies
-
-```bash
-pip install feedparser
-```
-
-### 3. Run the project
-
-```bash
+1. Install dependencies
+pip install feedparser streamlit
+2. Run CLI newsletter generator
 python main.py
+3. Run Streamlit dashboard
+streamlit run app.py
 ```
 
 ---
