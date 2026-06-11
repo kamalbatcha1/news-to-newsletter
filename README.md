@@ -1,106 +1,115 @@
 # 📰 News Intelligence Pipeline (RSS → Newsletter Generator)
 
-## 📌 Project Overview
+🚀 Overview
 
-This project demonstrates a complete end-to-end **data pipeline system** that simulates a real-world **content intelligence engine** used in modern news aggregators.
+This project simulates a real-world news intelligence system inspired by platforms like Google News and Flipboard.
 
-It ingests live RSS feeds, processes article data, applies rule-based classification, assigns relevance scores, and generates a structured and readable newsletter.
+It builds an end-to-end data pipeline that:
 
----
+Ingests live RSS feeds
+Processes and classifies articles
+Applies a relevance scoring system
+Generates structured newsletters
+Displays insights via a Streamlit dashboard
 
-## 🏗️ Architecture
+📌 Focus: Data Engineering + NLP + Ranking Systems + UI Visualization
 
-```
+🧠 Architecture
 RSS Feeds
    ↓
 Data Ingestion (feedparser)
    ↓
 Processing Layer
-   ├── Classification (rule-based)
-   ├── Summarization (text processing)
+   ├── Classification (rule-based, extensible to ML/LLMs)
+   ├── Extractive Summarization (headline-based NLP)
    ↓
-Ranking System (scoring logic)
+Ranking Engine (keyword + category scoring)
    ↓
-Newsletter Generation
-   ↓
-Output File (newsletter.txt)
-```
+Output Generation
+   ├── Console Newsletter
+   ├── Text File Report
+   ├── Streamlit Dashboard
+   
+✨ Key Features
 
----
+🔗 Real-time RSS feed ingestion
+🧠 Intelligent rule-based classification system
+✂️ Lightweight NLP-based summarization
+📊 Custom ranking algorithm for relevance scoring
+📺 Interactive Streamlit dashboard
+💾 Automated newsletter generation (TXT output)
+🧩 Fully modular and scalable architecture
+🔌 Easy upgrade path to ML / LLM-based system
 
-## ✨ Features
+🧰 Tech Stack
 
-* 🔗 RSS feed ingestion from multiple sources
-* 🧠 Rule-based article classification (Technology, Business, General)
-* ✂️ Lightweight text summarization from headlines
-* 📊 Custom ranking system using keyword scoring
-* 🧾 Automated newsletter generation
-* 💾 Saves structured output to a text file
-* 🧩 Fully modular pipeline architecture
+Python 3.11
+feedparser (RSS ingestion)
+Streamlit (UI dashboard)
+Standard Python libraries
+Modular pipeline design
 
----
-
-## 📁 Project Structure
-
-```
-.
+📁 Project Structure
 .
 ├── config.py         # RSS feed configuration
-├── ingest.py         # RSS data ingestion layer
-├── processor.py      # Classification & summarization logic
-├── ranking.py        # Article scoring system
-├── pipeline.py       # End-to-end pipeline orchestration
-├── newsletter.py     # Newsletter generator (console + file)
+├── ingest.py         # RSS ingestion layer
+├── processor.py      # Classification + summarization
+├── ranking.py        # Scoring engine
+├── pipeline.py       # End-to-end orchestration
+├── newsletter.py     # Newsletter generator
 ├── main.py           # CLI entry point
-├── app.py            # Streamlit dashboard UI
-└── newsletter.txt    # Generated output file
-```
+├── app.py            # Streamlit dashboard
+└── newsletter.txt    # Output file
 
----
+⚙️ How It Works
 
-## ⚙️ How It Works
+RSS feeds are fetched using feedparser
+Articles are extracted (title + link)
+Articles are classified by category
+Headlines are summarized (extractive method)
+Relevance score is computed using:
+Category weight
+Keyword matching
+Articles are sorted by score
+Output is generated in multiple formats:
+CLI newsletter
+File-based report
+Web dashboard
 
-1. RSS feeds are fetched using `feedparser`
-2. Each article is extracted (title + link)
-3. Articles are classified using rule-based logic
-4. A short summary is generated from the title
-5. A relevance score is calculated using keywords + category
-6. Articles are sorted based on score
-7. A structured newsletter is generated and saved
-
----
-
-## ▶️ How to Run
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/news-to-newsletter.git
+▶️ How to Run
+1. Clone Repository
+git clone https://github.com/kamalbatcha1/news-to-newsletter.git
 cd news-to-newsletter
-```
-2. Install dependencies
+2. Install Dependencies
 pip install feedparser streamlit
-3. Run CLI newsletter generator
+3. Run CLI Newsletter
 python main.py
-4. Run Streamlit dashboard
+4. Launch Dashboard
+   
 streamlit run app.py
+📸 Dashboard Preview
 
-## 🔮 Future Improvements
+![Dashboard preview](newsletter1.png)
 
-* Replace rule-based classification with LLMs (GPT / Claude)
-* Use embeddings for deduplication of similar news
-* Improve ranking using semantic similarity
-* Add personalization layer for users
-* Deploy as a web app (Streamlit / FastAPI)
-* Automate email newsletter delivery
+🔮 Future Improvements
+Replace rule-based classification with transformer models (BERT / LLMs)
+Add semantic similarity using embeddings (Sentence-BERT)
+Improve ranking using learning-to-rank models
+Add personalization based on user behavior
+Deploy using Streamlit Cloud / AWS
+Automate newsletter delivery via email scheduling
 
----
+🚀 Key Highlights
+Built a complete end-to-end data pipeline system
+Designed modular and production-style architecture
+Implemented ranking system simulating real-world news relevance scoring
+Created interactive dashboard using Streamlit
+Built with clear ML/AI upgrade path
 
-## ⚠️ Disclaimer
+⚠️ Disclaimer
 
-This project uses publicly available RSS feeds for educational and portfolio purposes only.
-All article titles and links belong to their respective publishers.
-
+This project uses publicly available RSS feeds for educational purposes only.
+All content belongs to their respective publishers.
 ---
 
 ## 👨‍💻 Author
