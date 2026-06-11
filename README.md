@@ -55,9 +55,7 @@ Output Generation
 ---
 
 ## 📁 Project Structure
-
-
-
+.
 .
 ├── config.py
 ├── ingest.py
@@ -68,3 +66,54 @@ Output Generation
 ├── main.py
 ├── app.py
 └── newsletter.txt
+
+---
+
+## ⚙️ How It Works
+
+1. RSS feeds are fetched using `feedparser`
+2. Articles are extracted (title + link)
+3. Articles are classified using source/category
+4. Headlines are summarized
+5. Relevance score is calculated using:
+   - Category importance
+   - Keyword matching
+6. Articles are sorted by score
+7. Output is generated in:
+   - CLI newsletter
+   - Text file (`newsletter.txt`)
+   - Streamlit dashboard
+
+---
+
+## ▶️ How to Run
+
+### 1. Install dependencies
+```bash
+pip install feedparser streamlit
+
+2. Run CLI newsletter generator
+python main.py
+3. Run Streamlit dashboard
+streamlit run app.py
+🔮 Future Improvements
+Replace rule-based classification with transformer models (BERT / LLMs)
+Add semantic deduplication using embeddings (Sentence-BERT)
+Improve ranking using learning-to-rank models
+Add personalization based on user behavior
+Deploy using Streamlit Cloud or AWS
+Automate newsletter delivery via email scheduling
+🚀 Key Highlights
+End-to-end data pipeline system
+Modular production-style architecture
+Ranking system simulating real-world relevance scoring
+Interactive Streamlit dashboard
+Clear ML/AI upgrade path
+⚠️ Disclaimer
+
+This project uses publicly available RSS feeds for educational purposes only.
+All content belongs to their respective publishers.
+
+👨‍💻 Author
+
+Kamal Batcha
