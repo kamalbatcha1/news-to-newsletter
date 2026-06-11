@@ -88,11 +88,6 @@ streamlit run app.py
 ```
 
 
-## 📸 Dashboard Preview
-
-![news Dashboard](newsletter1)
-
-
 ## 🔮 Future Improvements
 
 * Replace rule-based classification with LLMs (GPT / Claude)
