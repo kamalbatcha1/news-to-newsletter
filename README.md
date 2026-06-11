@@ -91,16 +91,14 @@ pip install feedparser
 ```bash
 python main.py
 ```
-
-
+### 4. Run Streamlit dashboard
+```bash
+streamlit run app.py
 ---
 
-## 📊 Sample Output
+📸 Dashboard Preview
 
-```
-![Dashboard Preview](newsletter1.png)
-```
-
+![dashboard](newsletter1.png)
 ---
 
 ## 🧠 Key Learnings
