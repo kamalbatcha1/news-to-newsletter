@@ -87,7 +87,7 @@ python main.py
 streamlit run app.py
 ```
 
----
+
 ## 📸 Dashboard Preview
 
 ![Dashboard Preview](newsletter1.png)
