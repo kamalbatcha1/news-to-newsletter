@@ -8,11 +8,11 @@ It builds an end-to-end data pipeline that:
 
 Ingests live RSS feeds
 Processes and classifies articles
-Applies a relevance scoring system
+Applies relevance scoring
 Generates structured newsletters
 Displays insights via a Streamlit dashboard
 
-📌 Focus: Data Engineering + NLP + Ranking Systems + UI Visualization
+📌 Focus: Data Engineering + NLP + Ranking Systems + Visualization
 
 🧠 Architecture
 RSS Feeds
@@ -21,75 +21,64 @@ Data Ingestion (feedparser)
    ↓
 Processing Layer
    ├── Classification (rule-based, extensible to ML/LLMs)
-   ├── Extractive Summarization (headline-based NLP)
+   ├── Extractive Summarization
    ↓
-Ranking Engine (keyword + category scoring)
+Ranking Engine
+   ├── Keyword + category scoring
    ↓
 Output Generation
-   ├── Console Newsletter
+   ├── CLI Newsletter
    ├── Text File Report
    ├── Streamlit Dashboard
-   
 ✨ Key Features
-
 🔗 Real-time RSS feed ingestion
-🧠 Intelligent rule-based classification system
+🧠 Rule-based classification system
 ✂️ Lightweight NLP-based summarization
-📊 Custom ranking algorithm for relevance scoring
+📊 Custom ranking algorithm
 📺 Interactive Streamlit dashboard
-💾 Automated newsletter generation (TXT output)
-🧩 Fully modular and scalable architecture
-🔌 Easy upgrade path to ML / LLM-based system
-
+💾 Automated newsletter generation
+🧩 Modular and scalable architecture
+🔌 Ready for ML / LLM upgrades
 🧰 Tech Stack
-
 Python 3.11
 feedparser (RSS ingestion)
 Streamlit (UI dashboard)
 Standard Python libraries
-Modular pipeline design
-
 📁 Project Structure
 .
-├── config.py         # RSS feed configuration
-├── ingest.py         # RSS ingestion layer
-├── processor.py      # Classification + summarization
-├── ranking.py        # Scoring engine
-├── pipeline.py       # End-to-end orchestration
-├── newsletter.py     # Newsletter generator
-├── main.py           # CLI entry point
-├── app.py            # Streamlit dashboard
-└── newsletter.txt    # Output file
-
+├── config.py
+├── ingest.py
+├── processor.py
+├── ranking.py
+├── pipeline.py
+├── newsletter.py
+├── main.py
+├── app.py
+└── newsletter.txt
 ⚙️ How It Works
-
 RSS feeds are fetched using feedparser
 Articles are extracted (title + link)
 Articles are classified by category
-Headlines are summarized (extractive method)
-Relevance score is computed using:
+Headlines are summarized
+Relevance score is calculated using:
 Category weight
 Keyword matching
 Articles are sorted by score
-Output is generated in multiple formats:
+Output generated in:
 CLI newsletter
-File-based report
+Text file
 Web dashboard
-
 ▶️ How to Run
-1. Clone Repository
+1. Clone repository
 git clone https://github.com/kamalbatcha1/news-to-newsletter.git
 cd news-to-newsletter
-2. Install Dependencies
+2. Install dependencies
 pip install feedparser streamlit
-3. Run CLI Newsletter
+3. Run CLI newsletter
 python main.py
-4. Launch Dashboard
-   
+4. Run Streamlit dashboard
 streamlit run app.py
 📸 Dashboard Preview
-
-![Dashboard preview](newsletter1.png)
 
 🔮 Future Improvements
 Replace rule-based classification with transformer models (BERT / LLMs)
@@ -97,21 +86,17 @@ Add semantic similarity using embeddings (Sentence-BERT)
 Improve ranking using learning-to-rank models
 Add personalization based on user behavior
 Deploy using Streamlit Cloud / AWS
-Automate newsletter delivery via email scheduling
-
+Automate newsletter delivery via email
 🚀 Key Highlights
-Built a complete end-to-end data pipeline system
-Designed modular and production-style architecture
-Implemented ranking system simulating real-world news relevance scoring
-Created interactive dashboard using Streamlit
-Built with clear ML/AI upgrade path
-
+End-to-end data pipeline system
+Modular production-style architecture
+Ranking system simulating real-world news relevance
+Interactive Streamlit dashboard
+Clear ML/AI upgrade path
 ⚠️ Disclaimer
 
 This project uses publicly available RSS feeds for educational purposes only.
 All content belongs to their respective publishers.
----
-
 ## 👨‍💻 Author
 
 Kamal Batcha
