@@ -1,13 +1,35 @@
 def generate_newsletter(articles):
 
-    print("\n --- NEWSLETTER --- \n")
+    print("\n--- AUTOMATED NEWSLETTER ---\n")
 
     with open("newsletter.txt", "w", encoding="utf-8") as f:
 
-        for a in articles:
+        for article in articles:
 
-            print(a["category"], "|", a["title"], "|", round(a["score"], 2))
+            print(
+                f"[{article['category']}] "
+                f"{article['title']} "
+                f"(Score: {article['score']})"
+            )
 
-            f.write(f"[{a['category']}] {a['title']}\n")
-            f.write(f"{a['summary']}\n")
-            f.write(f"{a['link']}\n\n")
+            print(article["link"])
+            print()
+
+            f.write(
+                f"[{article['category']}] "
+                f"{article['title']}\n"
+            )
+
+            f.write(
+                f"Summary: {article['summary']}\n"
+            )
+
+            f.write(
+                f"Score: {article['score']}\n"
+            )
+
+            f.write(
+                f"Link: {article['link']}\n\n"
+            )
+
+    print("Newsletter saved as newsletter.txt")
