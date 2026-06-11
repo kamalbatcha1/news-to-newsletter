@@ -1,13 +1,15 @@
-def classify(title):
-    title = title.lower()
+def classify(article):
+    """
+    Use RSS feed source as the main category.
+    """
 
-    if any(word in title for word in ["ai", "google", "apple", "microsoft"]):
-        return "Technology"
-    elif any(word in title for word in ["market", "business", "stock"]):
-        return "Business"
-    else:
-        return "General"
+    return article["source"]
 
 
-def summarize(title):
-    return " ".join(title.split()[:6]) + "..."
+def summarize(title, max_words=8):
+    words = title.split()
+
+    if len(words) <= max_words:
+        return title
+
+    return " ".join(words[:max_words]) + "..."
