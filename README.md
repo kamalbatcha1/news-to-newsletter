@@ -31,21 +31,14 @@ Output File (newsletter.txt)
 
 ---
 
-## 🛠️ Installation
-
-### 1. Clone the repository
-git clone https://github.com/your-username/news-to-newsletter.git
-cd news-to-newsletter
-
----
-
-### 2. Install dependencies
+▶️ How to Run
+1. Clone the repository
+git clone https://github.com/your-username/news-pipeline.git
+cd news-pipeline
+2. Install dependencies
 pip install feedparser
-
-
-### Run the pipeline:
+3. Run the project
 python main.py
-
 ## Future Improvements
 
 -Replace rule-based logic with LLMs (GPT/Claude) ​
