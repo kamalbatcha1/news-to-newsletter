@@ -1,99 +1,142 @@
-📰 News Intelligence Pipeline (RSS → AI Newsletter Generator)
-📌 Project Overview
+# 📰 Automated News Intelligence Pipeline (Python)
 
-This project simulates a real-world news intelligence pipeline, similar to content aggregation systems used in platforms like Google News and Flipboard.
+An end-to-end Python-based news aggregation and processing pipeline that fetches real-time news from RSS feeds, classifies articles, ranks them based on relevance, and generates a structured newsletter output.
 
-It ingests live RSS feeds, processes article data, performs lightweight NLP-based processing, applies a relevance scoring system, and generates a structured newsletter output.
+---
 
-The system is designed using a modular pipeline architecture, making it easy to extend with ML/LLM-based components in the future.
+## 🚀 Project Overview
 
-🏗️ Architecture
+This project demonstrates a complete data pipeline that simulates a real-world content intelligence system used in news aggregators.
+
+It ingests live RSS feeds, processes article data, applies rule-based classification, assigns relevance scores, and generates a clean, readable newsletter.
+
+---
+
+## 🏗️ Architecture
+
+```
 RSS Feeds
    ↓
 Data Ingestion (feedparser)
    ↓
 Processing Layer
-   ├── Lightweight Classification (rule-based, extensible to ML/LLMs)
-   ├── Extractive Summarization (headline-based processing)
+   ├── Classification
+   ├── Summarization
    ↓
-Ranking System (keyword + category-based scoring)
+Ranking Engine
    ↓
-Newsletter Generation
+Newsletter Generator
    ↓
-Output File (newsletter.txt + Streamlit Dashboard)
-🧰 Tech Stack
-Python 3.11
-feedparser (RSS ingestion)
-Streamlit (dashboard UI)
-Standard Python libraries
-Modular pipeline design
-✨ Features
-🔗 Real-time RSS feed ingestion from multiple sources
-🧠 Lightweight rule-based classification (extensible to ML/LLMs)
-✂️ Extractive summarization from headlines
-📊 Keyword + category-based ranking system
-🧾 Automated newsletter generation
-📺 Interactive Streamlit dashboard
-💾 Structured text output (newsletter.txt)
-🧩 Fully modular and scalable architecture
-📁 Project Structure
+Final Output (Console + TXT file)
+```
+
+---
+
+## ✨ Features
+
+* 📡 RSS Feed ingestion from multiple sources
+* 🧠 Rule-based article classification (Tech / Business / General)
+* ✂️ Lightweight text summarization
+* 📊 Custom ranking system for relevance scoring
+* 🧾 Automated newsletter generation
+* 🧩 Modular and scalable Python codebase
+
+---
+
+## 📁 Project Structure
+
+```
 .
 ├── config.py         # RSS feed configuration
-├── ingest.py         # RSS data ingestion layer
-├── processor.py      # Classification & summarization logic
-├── ranking.py        # Article scoring system
+├── ingest.py         # Data ingestion from RSS feeds
+├── processor.py      # Classification and summarization logic
+├── ranking.py        # Scoring and ranking system
 ├── pipeline.py       # End-to-end pipeline orchestration
-├── newsletter.py     # Newsletter generator (console + file)
-├── main.py           # CLI entry point
-├── app.py            # Streamlit dashboard UI
+├── newsletter.py     # Output generation (console + file)
+├── main.py           # Entry point
 └── newsletter.txt    # Generated output file
-⚙️ How It Works
-RSS feeds are fetched using feedparser
-Articles are extracted (title, link, source)
-Articles are classified based on source category
-Headlines are processed into short summaries
-A relevance score is calculated using:
-Category importance
-Keyword matching (AI, markets, tech trends, etc.)
-Articles are sorted by relevance score
-Output is generated as:
-Console newsletter
-Text file (newsletter.txt)
-Streamlit dashboard
-▶️ How to Run
-1. Install dependencies
-pip install feedparser streamlit
-2. Run CLI newsletter generator
+```
+
+---
+
+## ⚙️ How It Works
+
+1. RSS feeds are fetched using `feedparser`
+2. Each article is extracted (title + link)
+3. Articles are classified based on source/category rules
+4. A short summary is generated from the title
+5. A relevance score is calculated using keywords + category
+6. Articles are sorted by score
+7. A structured newsletter is generated
+
+---
+
+## ▶️ How to Run
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/news-pipeline.git
+cd news-pipeline
+```
+
+### 2. Install dependencies
+
+```bash
+pip install feedparser
+```
+
+### 3. Run the project
+
+```bash
 python main.py
-3. Run Streamlit dashboard
-streamlit run app.py
-📊 Example Output
-[Business] AI regulations reshape global markets (Score: 9)
-Summary: AI regulations reshape global...
-Link: https://...
+```
 
-[Technology] Meta opens WhatsApp to AI integration (Score: 7)
-Summary: Meta opens WhatsApp to...
-Link: https://...
-🔮 Future Improvements
-Replace rule-based classification with transformer-based NLP models (BERT / LLMs)
-Implement semantic deduplication using embeddings (Sentence-BERT)
-Upgrade ranking system using learning-to-rank models or embeddings
-Add personalization layer based on user reading behavior
-Deploy using Streamlit Cloud or AWS
-Automate newsletter delivery via email scheduling (cron / AWS Lambda)
-🚀 Key Highlights
-Built an end-to-end data pipeline from ingestion to visualization
-Designed modular and scalable architecture
-Implemented ranking system simulating real-world news relevance scoring
-Developed interactive Streamlit dashboard for real-time insights
-Structured project with future ML/LLM upgrade path
-⚠️ Disclaimer
+---
 
-This project uses publicly available RSS feeds for educational and portfolio purposes only.
-All content belongs to their respective publishers.
+## 📊 Sample Output
 
-👨‍💻 Author
+```
+[Tech] AI giants' race to raise funds heats up — Score: 10
+Link: https://www.bbc.com/news/...
 
-Kamal Batcha
-AI/ML Engineer | Python | Machine Learning | AWS
+[Business] Air India flight crash investigation — Score: 8
+Link: https://www.bbc.com/news/...
+```
+
+---
+
+## 🧠 Key Learnings
+
+* Building modular Python applications
+* Designing ETL-style data pipelines
+* Working with real-time RSS data
+* Rule-based NLP techniques
+* Ranking and scoring systems
+* Structuring production-style Python projects
+
+---
+
+## 🔮 Future Improvements
+
+* Replace rule-based classification with ML models (TF-IDF / BERT)
+* AI-powered summarization using LLMs
+* Store articles in a database (SQLite/PostgreSQL)
+* Email automation for newsletter delivery
+* Web dashboard using Streamlit
+* Cloud deployment (AWS Lambda / EC2)
+
+---
+
+## ⚠️ Disclaimer
+
+This project uses publicly available RSS feeds for educational purposes only.
+All article titles and links belong to their respective publishers.
+
+---
+
+## 👨‍💻 Author
+
+Built as part of a personal portfolio to demonstrate Python, data pipelines, and automation skills.
+
+---
