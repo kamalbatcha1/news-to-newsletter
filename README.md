@@ -95,6 +95,7 @@ pip install feedparser streamlit
 python main.py
 3. Run Streamlit dashboard
 streamlit run app.py
+---
 
 🔮 Future Improvements
 Replace rule-based classification with transformer models (BERT / LLMs)
@@ -103,16 +104,21 @@ Improve ranking using learning-to-rank models
 Add personalization based on user behavior
 Deploy using Streamlit Cloud or AWS
 Automate newsletter delivery via email scheduling
+---
+
 🚀 Key Highlights
 End-to-end data pipeline system
 Modular production-style architecture
 Ranking system simulating real-world relevance scoring
 Interactive Streamlit dashboard
 Clear ML/AI upgrade path
+---
+
 ⚠️ Disclaimer
 
 This project uses publicly available RSS feeds for educational purposes only.
 All content belongs to their respective publishers.
+---
 
 👨‍💻 Author
 
