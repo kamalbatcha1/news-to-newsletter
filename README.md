@@ -1,71 +1,116 @@
-# news-to-newsletter
-This project demonstrates a complete data pipeline that simulates a real-world content intelligence system used in news aggregators.
+# 📰 News Intelligence Pipeline (RSS → Newsletter Generator)
 
-It ingests live RSS feeds, processes article data, applies rule-based classification, assigns relevance scores, and generates a clean, readable newsletter.
+## 📌 Project Overview
 
-##  Architecture
+This project demonstrates a complete end-to-end **data pipeline system** that simulates a real-world **content intelligence engine** used in modern news aggregators.
 
-RSS Feeds  
-↓  
-Data Ingestion (feedparser)  
-↓  
-Processing Layer  
-- Classification (rule-based )  
-- Summarization (text processing)  
-↓  
-Ranking System (scoring logic)  
-↓  
-Newsletter Generation  
-↓  
+It ingests live RSS feeds, processes article data, applies rule-based classification, assigns relevance scores, and generates a structured and readable newsletter.
+
+---
+
+## 🏗️ Architecture
+
+```
+RSS Feeds
+   ↓
+Data Ingestion (feedparser)
+   ↓
+Processing Layer
+   ├── Classification (rule-based)
+   ├── Summarization (text processing)
+   ↓
+Ranking System (scoring logic)
+   ↓
+Newsletter Generation
+   ↓
 Output File (newsletter.txt)
+```
 
 ---
 
-##  Features
+## ✨ Features
 
--  RSS feed ingestion from multiple sources  
--  Article classification (Technology, Business, General)  
--  Text summarization  
--  Rule-based ranking system  
--  Automated newsletter generation  
--  Saves output as text file  
--  Modular pipeline architecture  
+* 🔗 RSS feed ingestion from multiple sources
+* 🧠 Rule-based article classification (Technology, Business, General)
+* ✂️ Lightweight text summarization from headlines
+* 📊 Custom ranking system using keyword scoring
+* 🧾 Automated newsletter generation
+* 💾 Saves structured output to a text file
+* 🧩 Fully modular pipeline architecture
 
 ---
-📁 Project Structure
+
+## 📁 Project Structure
+
+```
 .
 ├── config.py         # RSS feed configuration
 ├── ingest.py         # Data ingestion from RSS feeds
-├── processor.py      # Classification and summarization logic
-├── ranking.py        # Scoring and ranking system
-├── pipeline.py       # End-to-end pipeline orchestration
-├── newsletter.py     # Output generation (console + file)
+├── processor.py      # Classification & summarization logic
+├── ranking.py        # Scoring system
+├── pipeline.py       # End-to-end orchestration
+├── newsletter.py     # Output generator (console + file)
 ├── main.py           # Entry point
 └── newsletter.txt    # Generated output file
+```
 
-⚙️ How It Works
-RSS feeds are fetched using feedparser
-Each article is extracted (title + link)
-Articles are classified based on source/category rules
-A short summary is generated from the title
-A relevance score is calculated using keywords + category
-Articles are sorted by score
-A structured newsletter is generated
+---
 
-▶️ How to Run
-1. Clone the repository
+## ⚙️ How It Works
+
+1. RSS feeds are fetched using `feedparser`
+2. Each article is extracted (title + link)
+3. Articles are classified using rule-based logic
+4. A short summary is generated from the title
+5. A relevance score is calculated using keywords + category
+6. Articles are sorted based on score
+7. A structured newsletter is generated and saved
+
+---
+
+## ▶️ How to Run
+
+### 1. Clone the repository
+
+```bash
 git clone https://github.com/your-username/news-to-newsletter.git
 cd news-to-newsletter
-2. Install dependencies
+```
+
+### 2. Install dependencies
+
+```bash
 pip install feedparser
-3. Run the project
+```
+
+### 3. Run the project
+
+```bash
 python main.py
-## Future Improvements
+```
 
--Replace rule-based logic with LLMs (GPT/Claude) ​
--Use embeddings for deduplication ​
--Improve ranking using semantic similarity ​
--Add personalization layer​
+---
 
-## Author
+## 🔮 Future Improvements
+
+* Replace rule-based classification with LLMs (GPT / Claude)
+* Use embeddings for deduplication of similar news
+* Improve ranking using semantic similarity
+* Add personalization layer for users
+* Deploy as a web app (Streamlit / FastAPI)
+* Automate email newsletter delivery
+
+---
+
+## ⚠️ Disclaimer
+
+This project uses publicly available RSS feeds for educational and portfolio purposes only.
+All article titles and links belong to their respective publishers.
+
+---
+
+## 👨‍💻 Author
+
 Kamal Batcha
+
+---
