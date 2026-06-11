@@ -92,16 +92,13 @@ pip install feedparser
 python main.py
 ```
 
+
 ---
 
 ## 📊 Sample Output
 
 ```
-[Tech] AI giants' race to raise funds heats up — Score: 10
-Link: https://www.bbc.com/news/...
-
-[Business] Air India flight crash investigation — Score: 8
-Link: https://www.bbc.com/news/...
+![Dashboard Preview](newsletter1.png)
 ```
 
 ---
