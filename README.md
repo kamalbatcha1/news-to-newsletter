@@ -97,7 +97,7 @@ python main.py
 streamlit run app.py
 ---
 
-🔮 Future Improvements
+##🔮 Future Improvements
 Replace rule-based classification with transformer models (BERT / LLMs)
 Add semantic deduplication using embeddings (Sentence-BERT)
 Improve ranking using learning-to-rank models
@@ -106,7 +106,7 @@ Deploy using Streamlit Cloud or AWS
 Automate newsletter delivery via email scheduling
 ---
 
-🚀 Key Highlights
+##🚀 Key Highlights
 End-to-end data pipeline system
 Modular production-style architecture
 Ranking system simulating real-world relevance scoring
@@ -114,12 +114,12 @@ Interactive Streamlit dashboard
 Clear ML/AI upgrade path
 ---
 
-⚠️ Disclaimer
+##⚠️ Disclaimer
 
 This project uses publicly available RSS feeds for educational purposes only.
 All content belongs to their respective publishers.
 ---
 
-👨‍💻 Author
+##👨‍💻 Author
 
 Kamal Batcha
