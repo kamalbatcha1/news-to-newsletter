@@ -94,9 +94,10 @@ python main.py
 ### 4. Run Streamlit dashboard
 ```bash
 streamlit run app.py
+```
 ---
 
-📸 Dashboard Preview
+## 📸 Dashboard Preview
 
 ![dashboard](newsletter1.png)
 ---
