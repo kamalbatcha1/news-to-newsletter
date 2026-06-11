@@ -55,14 +55,15 @@ Final Output (Console + TXT file)
 
 ```
 .
-├── config.py         # RSS feed configuration
-├── ingest.py         # Data ingestion from RSS feeds
-├── processor.py      # Classification and summarization logic
-├── ranking.py        # Scoring and ranking system
-├── pipeline.py       # End-to-end pipeline orchestration
-├── newsletter.py     # Output generation (console + file)
-├── main.py           # Entry point
-└── newsletter.txt    # Generated output file
+├── config.py
+├── ingest.py
+├── processor.py
+├── ranking.py
+├── pipeline.py
+├── newsletter.py
+├── main.py
+├── app.py
+└── newsletter.txt
 ```
 
 ---
