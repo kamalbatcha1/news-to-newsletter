@@ -78,15 +78,12 @@ Output File (newsletter.txt)
 git clone https://github.com/your-username/news-to-newsletter.git
 cd news-to-newsletter
 ```
-
-1. Install dependencies
+2. Install dependencies
 pip install feedparser streamlit
-2. Run CLI newsletter generator
+3. Run CLI newsletter generator
 python main.py
-3. Run Streamlit dashboard
+4. Run Streamlit dashboard
 streamlit run app.py
-```
-
 
 ## 🔮 Future Improvements
 
