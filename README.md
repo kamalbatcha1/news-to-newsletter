@@ -33,8 +33,8 @@ Output File (newsletter.txt)
 
 ▶️ How to Run
 1. Clone the repository
-git clone https://github.com/your-username/news-pipeline.git
-cd news-pipeline
+git clone https://github.com/your-username/news-to-newsletter.git
+cd news-to-newsletter
 2. Install dependencies
 pip install feedparser
 3. Run the project
