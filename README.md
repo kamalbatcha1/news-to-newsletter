@@ -90,7 +90,7 @@ streamlit run app.py
 ---
 ## 📸 Dashboard Preview
 
-![Dashboard](newsletter1.png)
+!(newsletter1.png)
 ---
 
 ## 🔮 Future Improvements
