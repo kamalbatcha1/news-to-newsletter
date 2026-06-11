@@ -88,6 +88,10 @@ streamlit run app.py
 ```
 
 ---
+## 📸 Dashboard Preview
+
+![Dashboard](assets/das.png)
+---
 
 ## 🔮 Future Improvements
 
