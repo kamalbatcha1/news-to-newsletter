@@ -9,6 +9,7 @@ def ingest_data():
 
         for entry in feed.entries[:5]:
             articles.append({
+                "source": source,
                 "title": entry.title,
                 "link": entry.link
             })
