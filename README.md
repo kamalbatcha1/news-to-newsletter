@@ -155,7 +155,6 @@ All article titles and links belong to their respective publishers.
 ---
 
 ## 👨‍💻 Author
-
-Built as part of a personal portfolio to demonstrate Python, data pipelines, and automation skills.
+Kamal Batcha
 
 ---
