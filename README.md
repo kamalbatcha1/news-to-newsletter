@@ -114,7 +114,7 @@ streamlit run app.py
 
 ## 📸 Dashboard Preview
 
-![dashboard](newsletter1.png)
+![dashboard](newsletter.png)
 ---
 
 ## 🧠 Key Learnings
@@ -146,6 +146,7 @@ streamlit run app.py
 -Interactive Streamlit dashboard
 -Clear ML/AI upgrade path
 
+---
 ## ⚠️ Disclaimer
 
 This project uses publicly available RSS feeds for educational purposes only.
